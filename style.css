@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDEFF4;
+  margin: 2em 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+hr { margin: 1.2em; }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 100px));
+  justify-content: center;
+  gap: 1em;
+}
+
+.box-persegi,
+.box-persegi-panjang {
+  text-align: center;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  border-left: 2px solid brown;
+  border-right: 2px solid brown;
+  box-shadow: 0 6px 1em rgba(0,0,0,.3);
+}
+
+.box-persegi {
+  background-color: #FF5C8D;
+}
+
+.box-persegi-panjang {
+  background-color: #FF5C8D;
+}
+
+h2 { margin-bottom: .5em; }
+
+input[type="number"] {
+  padding: 3px 6px;
+  caret-color: #FF5C8D;
+  letter-spacing: .1em;
+  font-size: 1em;
+}
+
+button {
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* COMBINE PERSEGI/PERSEGI PANJANG/SEGITIGA */
+.input-persegi,
+.result-persegi,
+.keliling-persegi,
+.box-panjang-lebar-pp,
+.box-result-pp {
+  margin-bottom: .8em;
+}
+
+.input-persegi,
+.result-persegi,
+.keliling-persegi {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  justify-content: center;
+  gap: 10px;
+  margin-top: .8em;
+}
+
+.button-pp { margin-top: .8em; }
+
+.btn-calculate,
+.btn-remove,
+.btn-calculate-keliling,
+.btn-remove-keliling,
+.btn-calculate-luas-pp,
+.btn-remove-luas-pp,
+.btn-calculate-keliling-pp {
+  letter-spacing: .5px;
+}
+
+.btn-calculate,
+.btn-calculate-keliling,
+.btn-calculate-luas-pp,
+.btn-calculate-keliling-pp {
+  background-color: #FDEFF4;
+}
+
+.btn-remove,
+.btn-remove-keliling,
+.btn-remove-luas-pp {
+  background-color: rgb(243, 75, 75);
+  color: white;
+}
+
+.box-panjang-lebar-pp {
+  display: grid;
+  grid-template-columns: 10rem 8rem 8rem;
+  gap: 10px;
+}
+
+.box-result-pp {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+
